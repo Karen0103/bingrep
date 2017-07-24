@@ -1,6 +1,4 @@
-# bingrep
-IDA plugin for function search
-====
+
 
 ## Description
 
