@@ -1,10 +1,6 @@
 # bingrep
 IDA plugin for function search
-BinGrep
 ====
-
-IDA plugin for function search
-
 
 ## Description
 
