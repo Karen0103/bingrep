@@ -122,9 +122,9 @@ def hash_label(marks):
 
 def get_marks(block, gamma):
     marks = []
-    for head in Heads(block.startEA, block.endEA):
-        mnem = GetMnem(head)
-        opnd = (GetOpnd(head, 0), GetOpnd(head, 1), GetOpnd(head, 2))
+    for head in Heads(block.startEA, block.endEA): # Heads: get a list of instructions' addresses between start address and end address
+        mnem = GetMnem(head)# GetMnem: get instruction mnemonics such as MOV, ADD, JMP.  opcode is the number of the mnemonic
+        opnd = (GetOpnd(head, 0), GetOpnd(head, 1), GetOpnd(head, 2))#instruction = opcode + operands   GetOpnd: get the operands of an instruction 
 
         if mnem not in ["call"]:
             for buf in (opnd[1], opnd[2]):
